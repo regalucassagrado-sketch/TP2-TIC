@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title data-i18n="h1-pagina1">Lenguajes de Programación</title>
+</head>
+<body>
+    <div id="container">
+    <div id="encabezado">
+        <img src="img/pato.png" alt="Logo">
+        
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina1.html">Conceptos</a></li>
+            <li><a href="pagina2.html">Lenguajes</a></li>
+            <li><a href="pagina3.html">Historia</a></li>
+            <li><a href="pagina4.html">Rutas de aprendizaje</a></li>
+        </ul>
+
+
+
+    </div>
+    </div>
+
+    <h1 data-i18n="h1-pagina1">Lenguajes de Programación</h1>
+
+    <div class="centro">
+        <h3>¿En qué consiste un lenguaje de programación?</h3>
+        <p>La programación es el proceso de crear un conjunto de instrucciones detalladas para decirle a una computadora exactamente qué hacer, cómo hacerlo y cuándo hacerlo. Dado que las computadoras no tienen sentido común ni iniciativa propia, la programación es el "idioma" que usamos para comunicarnos con ellas y darles órdenes de forma lógica y ordenada.</p>
+        <h3>¿Cuál es su utilidad?</h3>
+        <p>Su función principal es hacer posible la creación de aplicaciones y programas capaces de resolver distintas problemáticas y automatizar procesos del día a día.</p>
+       
+        <li>Crear software y herramientas: Desarrollar los sistemas operativos, las aplicaciones móviles (como WhatsApp o Instagram), las páginas web y los videojuegos que usamos a diario.</li>
+        <li>Procesar grandes volúmenes de datos: Analizar, organizar y calcular millones de datos en segundos (algo que a un humano le tomaría años).</li>
+        <li>Controlar hardware y maquinaria: Hacer que funcionen desde los electrodomésticos inteligentes de una casa hasta los robots industriales, los autos autónomos o los satélites en el espacio.</li>
+        <li>Facilitar la vida cotidiana: Automatizar tareas repetitivas y aburridas para que las personas e industrias sean más eficientes, rápidas y precisas.</li>
+    </div>
+    <button id="btn-quiz" onclick="abrirQuiz()">🧠 Hacer Quiz</button>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarQuiz()">&times;</span>
+            <h2>Quiz de Lenguajes de Programación</h2>
+            <div id="quiz-contenido"></div>
+            <button id="btn-resultado" onclick="mostrarResultado()" style="display:none;">Ver Resultado</button>
+            <div id="quiz-resultado"></div>
+        </div>
+    </div>
+
+    <button id="subir" onclick="subirArriba()">↑ Arriba</button>
+
+    <div class="video-contenido">
+        <h3>Video relacionado: ¿Qué es un lenguaje de programación?</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TUV975TGpE0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p>Pagina creada con fines educativos - Lucas Rega, 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

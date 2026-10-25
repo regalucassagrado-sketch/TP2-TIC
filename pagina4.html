@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Proyectos de Ejemplo</title>
+</head>
+<body>
+    <div id="container">
+    <div id="encabezado">
+        <img src="img/pato.png" alt="Logo">
+        
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina1.html">Conceptos</a></li>
+            <li><a href="pagina2.html">Lenguajes</a></li>
+            <li><a href="pagina3.html">Historia</a></li>
+            <li><a href="pagina4.html">Rutas de aprendizaje</a></li>
+        </ul>
+
+
+
+    </div>
+    </div>
+
+    <h1>¿Por dónde empezar a programar?</h1>
+    <h3>Entrar al mundo de la programación puede resultar abrumador por la enorme cantidad de lenguajes y herramientas que existen. Sin embargo, no hace falta aprender todo a la vez: la clave está en elegir un camino según tus metas e intereses profesionales.</h3>
+
+    <div class="centro">
+        <div class="cajas">
+            <h3>Desarrollo Web Frontend</h3>
+        
+            <p>Si te apasiona el diseño visual, las interfaces de usuario y la experiencia interactiva, este es tu camino. El desarrollador frontend crea todo lo que el usuario ve y toca en una página o aplicación web.</p>
+
+        <li>Camino sugerido: Comenzá con los pilares del diseño web: HTML (estructura), CSS (estilo). Luego aprende JavaScript para agregar interactividad. Una vez domines las bases, podés dar el salto a un framework moderno como React, Vue.js o Angular.</li>
+      
+        </div>
+
+        <div class="cajas">
+            <h3>Desarrollo Web Backend</h3>
+            <p>Si prefieres enfocarte en la lógica, el manejo de datos, la seguridad y el rendimiento detrás de escena, tu lugar está en el backend.</p>
+            <p>Script automático en Python orientado a realizar consultas en APIs de servicios (clima o noticias) para despachar alertas a plataformas como Discord o Telegram.</p>
+        <li>Camino sugerido: Dominá primero las bases de lógica y el manejo de bases de datos (SQL o MongoDB). Después, elegí un lenguaje robusto para servidor como Node.js (JavaScript/TypeScript), Python, Java o C#. También es fundamental aprender a construir APIs para conectar el servidor con las aplicaciones.</li>
+        </div>
+
+    <img src="img/frontbackend.png" alt="Frontend y Backend" width="500" height="300">
+    </div>
+    <button id="btn-quiz" onclick="abrirQuiz()">🧠 Hacer Quiz</button>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarQuiz()">&times;</span>
+            <h2>Quiz de Lenguajes de Programación</h2>
+            <div id="quiz-contenido"></div>
+            <button id="btn-resultado" onclick="mostrarResultado()" style="display:none;">Ver Resultado</button>
+            <div id="quiz-resultado"></div>
+        </div>
+    </div>
+
+    <button id="subir" onclick="subirArriba()">↑ Arriba</button>
+
+    <div class="video-contenido">
+        <h3>Video relacionado: ¿Por dónde empezar a programar?</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nuIlOrY36F0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p>Pagina creada con fines educativos - Lucas Rega, 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

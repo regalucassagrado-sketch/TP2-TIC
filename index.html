@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguajes de Programación - Inicio</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="container">
+    <div id="encabezado">
+        <img src="img/pato.png" alt="Logo">
+        <h1 id="titulo"><span id="maquina"></span></h1>
+        
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina1.html">Conceptos</a></li>
+            <li><a href="pagina2.html">Lenguajes</a></li>
+            <li><a href="pagina3.html">Historia</a></li>
+            <li><a href="pagina4.html">Rutas de aprendizaje</a></li>
+        </ul>
+
+
+
+    </div>
+    </div>
+
+    <div id="banner">
+        <img src="img/banner.png" alt="banner">
+    </div>
+
+    <div class="centro">
+
+        <div class="cajas" onclick="abrirModal('python')">
+            <h3>Python</h3>
+            <img src="img/python_logo.png" alt="Python">
+            <p>Es un lenguaje interpretado y de alto nivel, sumamente popular por la simplicidad y legibilidad de su sintaxis.</p>
+        </div>
+
+        <div class="cajas" onclick="abrirModal('javascript')">
+            <h3>JavaScript</h3>
+            <img src="img/javascript_logo.png" alt="JavaScript">
+            <p>Es un lenguaje de programación interpretado y de alto nivel, ampliamente utilizado para el desarrollo web.</p>
+        </div>
+
+        <div class="cajas" onclick="abrirModal('java')">
+            <h3>Java</h3>
+            <img src="img/java_logo.png" alt="Java">
+            <p>Es un lenguaje de programación orientado a objetos, ampliamente utilizado para el desarrollo de aplicaciones empresariales y móviles.</p>
+        </div>
+
+        <div class="cajas" onclick="abrirModal('cplus')">
+            <h3>C++ y C#: C++</h3>
+            <img src="img/cplus_logo.png" alt="C++">
+            <p>Es un lenguaje de programación orientado a objetos, se usa en motores de videojuegos y software de alto rendimiento. C# se integra en el entorno de Microsoft y en Unity.</p>
+        </div>
+
+        <div class="cajas" onclick="abrirModal('php')">
+            <h3>PHP</h3>
+            <img src="img/php_logo.png" alt="PHP">
+            <p>Es un lenguaje de programación de script del lado del servidor, ampliamente utilizado para el desarrollo web.</p>
+        </div>
+
+        <div class="cajas" onclick="abrirModal('ruby')">
+            <h3>Ruby</h3>
+            <img src="img/ruby_logo.png" alt="Ruby">
+            <p>Conocido por su framework Ruby on Rails, prioriza la simplicidad y la velocidad para crear aplicaciones web rápidamente.</p>
+        </div>
+    </div>
+
+    <button id="subir" data-i18n="btn-arriba" onclick="subirArriba()">↑ Arriba</button>
+
+    <footer>
+        <p>Pagina creada con fines educativos - Lucas Rega, 2026</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-texto"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

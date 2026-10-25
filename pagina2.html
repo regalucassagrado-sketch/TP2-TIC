@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Paradigmas de Programación</title>
+</head>
+<body>
+    <div id="container">
+    <div id="encabezado">
+        <img src="img/pato.png" alt="Logo">
+        
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina1.html">Conceptos</a></li>
+            <li><a href="pagina2.html">Lenguajes</a></li>
+            <li><a href="pagina3.html">Historia</a></li>
+            <li><a href="pagina4.html">Rutas de aprendizaje</a></li>
+        </ul>
+
+
+
+    </div>
+    </div>
+
+    <h1>Clasificación de lenguajes de programación</h1>
+
+    <div class="centro">
+        <p>No todos los lenguajes de programación son iguales ni se usan para lo mismo. Para entender cómo se comunican con la computadora, los dividimos en dos grandes categorías según qué tan cerca están del lenguaje humano o del idioma de la máquina:</p>
+         
+        <h3>Lenguajes de alto nivel</h3>
+        <p>Son lenguajes diseñados para que las personas los puedan leer y escribir de forma sencilla. Utilizan palabras en inglés (como if, for, print) y reglas matemáticas comunes. Ejemplos muy conocidos como Python, JavaScript o Ruby funcionan de esa forma y permiten crear aplicaciones y páginas web de manera rápida y eficaz ya que el programador se concentra en resolver el problema y no en cómo funciona el chip de la computadora por dentro. Entre los primeros lenguajes de alto nivel se encuentran Fortran, COBOL y Lisp, que fueron pioneros en la historia de la programación y sentaron las bases para los lenguajes modernos que usamos hoy en día.</p>
+
+        <h3>Lenguajes de bajo nivel</h3>
+        <p>Son lenguajes que están muy cerca del idioma real de la máquina (los circuitos y el hardware). Utilizan instrucciones directas para el procesador y la memoria, lo que los hace muy difíciles de leer para un humano. Un ejemplo es Assembly o C, los cuales ofrecen un control total sobre los componentes físicos de la computadora. Estos son utilizados para que los videojuegos o los sistemas de un auto inteligente funcionen a la velocidad más alta que puedan alcanzar.</p>
+    </div>
+    <button id="btn-quiz" onclick="abrirQuiz()">🧠 Hacer Quiz</button>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarQuiz()">&times;</span>
+            <h2>Quiz de Lenguajes de Programación</h2>
+            <div id="quiz-contenido"></div>
+            <button id="btn-resultado" onclick="mostrarResultado()" style="display:none;">Ver Resultado</button>
+            <div id="quiz-resultado"></div>
+        </div>
+    </div>
+
+    <button id="subir" onclick="subirArriba()">↑ Arriba</button>
+
+    <div class="video-contenido">
+        <h3>Video relacionado: Clasificación de lenguajes</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zHFnXGbZLZg" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p>Pagina creada con fines educativos - Lucas Rega, 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
